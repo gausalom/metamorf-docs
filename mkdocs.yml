@@ -1,0 +1,9 @@
+site_name: Metamorf
+nav:
+  - Index: index.md
+  - Database: database.md
+
+theme: 
+    name: mkdocs
+    logo: 
+    nav_style: dark
