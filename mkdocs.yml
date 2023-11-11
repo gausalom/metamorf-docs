@@ -1,9 +1,25 @@
 site_name: Metamorf
 nav:
-  - Index: index.md
+  - What is Metamorf?: what_is_metamorf.md
+  - Architecture: architecture.md
   - Database: database.md
+  - Version Features: version_features.md
+  - Contact: contact.md
 
 theme: 
-    name: mkdocs
-    logo: 
-    nav_style: dark
+    name: material
+    language: en
+    logo: images/logo-white.png
+    favicon: images/logo.png
+    palette:
+      scheme: slate
+      primary: teal
+      accent: cyan
+  
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/gasalom/metamorf
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/guillermo-aumatell-038357146/
+  
