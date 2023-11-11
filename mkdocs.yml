@@ -1,6 +1,6 @@
 site_name: Metamorf
 nav:
-  - What is Metamorf?: what_is_metamorf.md
+  - Index: index.md
   - Architecture: architecture.md
   - Database: database.md
   - Version Features: version_features.md
