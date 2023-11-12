@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../commands/">
+        <link rel="prev" href="../version_features/">
       
       
-        <link rel="next" href="../roadmap/">
+        <link rel="next" href="../contact/">
       
       
       <link rel="icon" href="../images/logo.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Version Features - Metamorf</title>
+        <title>Roadmap - Metamorf</title>
       
     
     
@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#0442" class="md-skip">
+        <a href="#0451" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Version Features
+              Roadmap
             
           </span>
         </div>
@@ -270,6 +270,25 @@
       
   
   
+  
+    <li class="md-nav__item">
+      <a href="../version_features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Version Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -283,7 +302,7 @@
           
   
   <span class="md-ellipsis">
-    Version Features
+    Roadmap
   </span>
   
 
@@ -294,7 +313,7 @@
         
   
   <span class="md-ellipsis">
-    Version Features
+    Roadmap
   </span>
   
 
@@ -314,22 +333,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#0442" class="md-nav__link">
-    0.4.4.2
+  <a href="#0451" class="md-nav__link">
+    0.4.5.1
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#0441" class="md-nav__link">
-    0.4.4.1
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#0431" class="md-nav__link">
-    0.4.3.1
+  <a href="#backlog" class="md-nav__link">
+    Backlog
   </a>
   
 </li>
@@ -338,25 +350,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../roadmap/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Roadmap
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -405,22 +398,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#0442" class="md-nav__link">
-    0.4.4.2
+  <a href="#0451" class="md-nav__link">
+    0.4.5.1
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#0441" class="md-nav__link">
-    0.4.4.1
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#0431" class="md-nav__link">
-    0.4.3.1
+  <a href="#backlog" class="md-nav__link">
+    Backlog
   </a>
   
 </li>
@@ -440,29 +426,27 @@
                   
 
 
-  <h1>Version Features</h1>
+  <h1>Roadmap</h1>
 
-<h3 id="0442">0.4.4.2</h3>
+<p>This section presents the improvements that are in development and will be presented in the following versions.</p>
+<h2 id="0451">0.4.5.1</h2>
 <ul>
-<li><em>(Bugfix)</em> Execute any commands without any config file.</li>
-<li><em>(Bugfix)</em> Errors on NULL or None values on metadata entry.</li>
-<li><em>(Bugfix)</em> Errors on column detection on complex mappings.</li>
-<li><em>(Bugfix)</em> 'Files' command not using the correct target path connection.</li>
-<li><em>(Bugfix)</em> Error on historical metadata when delete some entities in special casuistics.</li>
-<li><em>(Feature)</em> Added 'if is null' logic on all hashes.</li>
-<li><em>(Feature)</em> The user can change column names on Datavault Engine - Mappings.</li>
-<li><em>(Feature)</em> Added duplicate control on Datavault Engine - Satellites.</li>
+<li>Improvement Metadata Entry Validations.</li>
+<li>Fix Metadata Entry - Mappings from DV Module</li>
+<li>Fix execution without configuration file.</li>
+<li>Improvement Metadata Entry with NULL values.</li>
+<li>Fix Metadata Process on mappings.</li>
+<li>Command File can use custom connections on target database.</li>
+<li>BugFix Metadata Process on Datavault module: Hash with NULL values.</li>
+<li>Add Feature: Datavault Module - SAT can include hardcoded values.</li>
 </ul>
-<h3 id="0441">0.4.4.1</h3>
+<h2 id="backlog">Backlog</h2>
 <ul>
-<li><em>(Feature)</em> <strong>Datavault</strong> module to speed up the creation of a Datavault Model. New metadata entry was added.</li>
-<li><em>(Feature)</em> File loader to upload csv files to the data database.</li>
-<li><em>(Feature)</em> Added compatibility to PostgreSQL and MySQL for metadata and data databases.</li>
-<li><em>(Feature)</em> Added compatibility to Linux OS.</li>
-</ul>
-<h3 id="0431">0.4.3.1</h3>
-<ul>
-<li><em>(Bugfix)</em> on installation with some packages.</li>
+<li><em>[Alpha Version]</em> Visual Metadata Entry to draw Datavault Models instead of CSV entry system.</li>
+<li><em>[Near development]</em> Include more materialization and more metadata transformation speeders.</li>
+<li><em>[Near development]</em> Include easier metadata entry system.</li>
+<li><em>[Near development]</em> Add an engine system to permits developpers add their own engines to speed up their own needs.</li>
+<li><em>[Future development]</em> Security Framework based on metadata for the datawarehouse</li>
 </ul>
 
 

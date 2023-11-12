@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../commands/">
+        <link rel="prev" href="../architecture/">
       
       
-        <link rel="next" href="../roadmap/">
+        <link rel="next" href="../commands/">
       
       
       <link rel="icon" href="../images/logo.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Version Features - Metamorf</title>
+        <title>Set up - Metamorf</title>
       
     
     
@@ -70,11 +70,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#0442" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -106,7 +101,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Version Features
+              Set up
             
           </span>
         </div>
@@ -232,9 +227,16 @@
       
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../setup/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -243,6 +245,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -270,27 +273,9 @@
       
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Version Features
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../version_features/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -299,45 +284,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#0442" class="md-nav__link">
-    0.4.4.2
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#0441" class="md-nav__link">
-    0.4.4.1
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#0431" class="md-nav__link">
-    0.4.3.1
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -398,35 +344,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#0442" class="md-nav__link">
-    0.4.4.2
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#0441" class="md-nav__link">
-    0.4.4.1
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#0431" class="md-nav__link">
-    0.4.3.1
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -440,30 +357,53 @@
                   
 
 
-  <h1>Version Features</h1>
+  <h1>Set up</h1>
 
-<h3 id="0442">0.4.4.2</h3>
-<ul>
-<li><em>(Bugfix)</em> Execute any commands without any config file.</li>
-<li><em>(Bugfix)</em> Errors on NULL or None values on metadata entry.</li>
-<li><em>(Bugfix)</em> Errors on column detection on complex mappings.</li>
-<li><em>(Bugfix)</em> 'Files' command not using the correct target path connection.</li>
-<li><em>(Bugfix)</em> Error on historical metadata when delete some entities in special casuistics.</li>
-<li><em>(Feature)</em> Added 'if is null' logic on all hashes.</li>
-<li><em>(Feature)</em> The user can change column names on Datavault Engine - Mappings.</li>
-<li><em>(Feature)</em> Added duplicate control on Datavault Engine - Satellites.</li>
-</ul>
-<h3 id="0441">0.4.4.1</h3>
-<ul>
-<li><em>(Feature)</em> <strong>Datavault</strong> module to speed up the creation of a Datavault Model. New metadata entry was added.</li>
-<li><em>(Feature)</em> File loader to upload csv files to the data database.</li>
-<li><em>(Feature)</em> Added compatibility to PostgreSQL and MySQL for metadata and data databases.</li>
-<li><em>(Feature)</em> Added compatibility to Linux OS.</li>
-</ul>
-<h3 id="0431">0.4.3.1</h3>
-<ul>
-<li><em>(Bugfix)</em> on installation with some packages.</li>
-</ul>
+<p>To install Metamorf, you need Python 3.10, and you can install it using pip. </p>
+<pre><code>pip install metamorf
+</code></pre>
+<p>Once installed, you can see all the available commands typing:</p>
+<pre><code>metamorf help
+</code></pre>
+<p>For a quick start, create a directory where you want to locate all the configuration files.</p>
+<pre><code>metamorf init
+</code></pre>
+<p>At this point, you have initialized your environment to configure Metamorf. The default configuration is through
+a SQLite database.</p>
+<p>Metamorf can be deployed where the configuration file says. If SQLite is selected (as default)
+and it doesn't exist, Metamorf will create the databases. Try it!</p>
+<pre><code>metamorf deploy
+</code></pre>
+<p>Now you have on your repository all the configuration files and a data and metadata example databases.<br />
+To deploy an example on both databases, just type:</p>
+<pre><code>metamorf deploy-example
+</code></pre>
+<p>A fake dataset is deployed on the data database, and a metadata entry is inserted on the metadata database.
+You can just watch all these things with any Database Tool as DBeaver.  </p>
+<p>If you want to process these metadata, try the command:</p>
+<pre><code>metamorf process
+</code></pre>
+<p>Now all the metadata is processed and the main tables of Metamorf are populated.
+To see if all works, you can just type any of the features that Metamorf offers:</p>
+<p>If you want to run the processes indicated on the metadata to transform all the fake data, you can just type:</p>
+<pre><code>metadata run
+</code></pre>
+<p>Probably you just want the SQL Files to execute from other platforms, type then:</p>
+<pre><code>metadata output
+</code></pre>
+<p>The results are located on the output folder on your repository.  </p>
+<p>The configuration file permits you to configure Metamorf to adapt it to your needs.
+For example, one interesting option could be to generate all your datasets on <em>dbt</em> format.
+To achieve it, just change your <em>configuration.yml</em> file, <strong>output</strong> option, <strong>type</strong> value to <strong>dbt</strong>.</p>
+<pre><code>  output:
+    type: dbt
+</code></pre>
+<p>You can execute again </p>
+<pre><code>metadata output
+</code></pre>
+<p>And now you have all the necessary files for your dbt project.  </p>
+<p>This tutorial is just a small demonstration about metamorf and its potential.</p>
+<p><em>Note: Metamorf works on Windows OS and Linux (tested on Ubuntu)</em></p>
 
 
 
