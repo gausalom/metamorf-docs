@@ -2,8 +2,10 @@ site_name: Metamorf
 nav:
   - Index: index.md
   - Architecture: architecture.md
-  - Database: database.md
+  - Set up: setup.md
+  - Commands: commands.md
   - Version Features: version_features.md
+  - Roadmap: roadmap.md
   - Contact: contact.md
 
 theme: 
