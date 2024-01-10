@@ -13,4 +13,4 @@ It offers accelerators that allow you to develop data models in a faster and mor
 
 This entire frameworks was created and is maintained by **Guillermo Aumatell Salom** *(guillermoaumatell@gmail.com)*. It is currently in beta phase constantly growing.
 
-    Current Version: 0.4.4.2
+    Current Version: 0.5.0
