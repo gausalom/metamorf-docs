@@ -1,4 +1,16 @@
 
+### 0.5.0 
+- (Feature) New example based on datavault modelling.
+- (Feature) Validations for metadata.
+- (Feature) Creation of schemas and databases if needed.
+- (Feature) Add new columns if needed.
+- (Feature) Select process to execute with dependencies if needed.
+- (Feature) Configuration hashes for Datavault module.
+- (Feature) Execution with threads.
+- (Feature) Primary Key on create table.
+- (Feature) Delete, Update, Merge strategies.
+- (Bugfix) Fixed some small bugs.
+
 ### 0.4.4.2
 - *(Bugfix)* Execute any commands without any config file.
 - *(Bugfix)* Errors on NULL or None values on metadata entry.
